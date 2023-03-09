@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model in CSS</title>
+    <style>
+        body{
+            background-color: rgb(200, 110, 228);
+        }
+        /* Universal Selector */
+        *{
+            box-sizing: border-box;
+            /* if you cannot override this it will be set for all padding and margin */
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            background-color: rgb(146, 201, 226);
+            border: 3px solid rgb(140, 107, 233);
+            /* padding: 9px; */
+            /* padding: 15px 56px 23px 14px; */   /* padding: top right bottom left; */
+            /* padding: top/bottom and right/left same for user this shortcut */
+            padding: 15px 56px;
+            margin: 15px 15px;
+            border-radius: 23px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Heading 1</h2>
+        <p id="first">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit et provident debitis! Hic,
+            rem harum tenetur modi vitae asperiores!</p>
+    </div>
+
+    <div class="container">
+        <h2>Heading 2</h2>
+        <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit et provident debitis! Hic, rem harum tenetur modi vitae asperiores!</p>
+    </div>
+
+    <div class="container">
+        <h2>Heading 3</h2>
+        <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid sit et provident debitis! Hic,
+            rem harum tenetur modi vitae asperiores!</p>
+    </div>
+</body>
+
+</html>

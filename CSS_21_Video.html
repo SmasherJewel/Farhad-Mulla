@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alingment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Public Sans', sans-serif;
+        }
+
+        .container {
+            background-color: aquamarine;
+            width: 900px;
+            border: 3px solid purple;
+            margin: auto;
+        }
+
+        .item {
+            border: 3px solid rgb(117, 236, 226);
+            padding: 13px 4px;
+            margin: 16px;
+            background-color: rgb(180, 88, 88);
+        }
+
+        #fruits{
+            /* float: left; */
+            width: 48%;
+        }
+
+        /* #computer{
+          position: absolute;
+            margin-left:48%;
+            width: 48%;
+        } */
+
+        #computer{
+            /* float: right; */
+            width: 48%;
+        }
+
+        #stationary{
+            /* float: left; */
+            /* clear: both; */
+            /* width: 100%; */
+        }
+
+        p,h3{
+            /* text-align: right;
+            text-align: left;
+            text-align: center; */
+            text-align: justify;
+        }
+
+        h1{
+            margin: 23px;
+            margin-left: 290px;
+            padding: 0px;
+            width: 455px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- ctrl + d -->
+        <h1>Welcome to My Store</h1>
+        <hr>
+        <span id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime ducimus similique aliquid eum qui,
+                tenetur vitae est ut quod commodi?
+            </p>
+        </span>
+
+        <span id="computer" class="item">
+            <h3>Computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita delectus natus omnis molestias quos
+                facere ut reprehenderit quaerat pariatur? Accusantium!
+            </p>
+        </span>
+
+        <div id="stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sed et accusamus obcaecati similique
+                nobis maxime, laborum recusandae ipsum. Officia?
+            </p>
+        </div>
+    </div>
+</body>
+</html>
